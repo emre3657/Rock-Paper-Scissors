@@ -9,9 +9,9 @@ updateScoreElement();
 function pickComputerMove() {
   let comptMove = "";
   const randomNumber = Math.round(Math.random() * 100) / 100;
-  if (randomNumber >= 0 && randomNumber < 1 / 3) comptMove = "Rock";
-  else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) comptMove = "Paper";
-  else comptMove = "Scissors";
+  if (randomNumber >= 0 && randomNumber < 1 / 3) comptMove = "rock";
+  else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) comptMove = "paper";
+  else comptMove = "scissors";
 
   // console.log(`Computer move is  '${comptMove}' (${randomNumber}) `);
   // console.log("\n");
@@ -50,15 +50,15 @@ function autoPlay() {
 }
 
 document.querySelector(".js-rock-button").addEventListener("click", () => {
-  playGame("Rock");
+  playGame("rock");
 });
 
 document.querySelector(".js-paper-button").addEventListener("click", () => {
-  playGame("Paper");
+  playGame("paper");
 });
 
 document.querySelector(".js-scissors-button").addEventListener("click", () => {
-  playGame("Scissors");
+  playGame("scissors");
 });
 
 document.querySelector(".js-reset-button").addEventListener("click", () => {
@@ -78,11 +78,11 @@ document.querySelector(".js-auto-play-button").addEventListener("click", () => {
 
 document.body.addEventListener("keydown", (event) => {
   if (event.key === "r") {
-    playGame("Rock");
+    playGame("rock");
   } else if (event.key === "p") {
-    playGame("Paper");
+    playGame("paper");
   } else if (event.key === "s") {
-    playGame("Scissors");
+    playGame("scissors");
   }
 });
 
@@ -95,9 +95,9 @@ function playGame(playerMove) {
     result = `Tie.`;
     score.ties++;
   } else if (
-    (playerMove === "Rock" && comptMove === "Scissors") ||
-    (playerMove === "Paper" && comptMove === "Rock") ||
-    (playerMove === "Scissors" && comptMove === "Paper")
+    (playerMove === "rock" && comptMove === "scissors") ||
+    (playerMove === "paper" && comptMove === "rock") ||
+    (playerMove === "scissors" && comptMove === "paper")
   ) {
     result = `You win.`;
     score.wins++;
