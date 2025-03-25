@@ -15,7 +15,7 @@ div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0 10px;
-  width: 400px;
+  width: 390px;
   justify-content: space-between;
 }
 .move-button {
@@ -25,15 +25,6 @@ div {
   border-radius: 50%;
   cursor: pointer;
   box-sizing: border-box;
-}
-
-@media (width < 400px) {
-  div {
-    grid-template-columns: 120px 120px;
-    gap: 10px;
-    justify-content: center;
-    width: 390px;
-  }
 }
 
 .result {
