@@ -29,9 +29,10 @@ div {
 
 @media (width < 400px) {
   div {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 120px 120px;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
+    width: 390px;
   }
 }
 
