@@ -12,7 +12,10 @@ body {
 }
 
 div {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  gap: 0 10px;
+  width: 380px;
 }
 .move-button {
   background-color: transparent;
@@ -20,13 +23,17 @@ div {
   width: 120px;
   height: 120px;
   border-radius: 60px;
-  margin-right: 10px;
-  margin-bottom: 10px;
   cursor: pointer;
   box-sizing: border-box;
 }
-.move-button:last-child {
-  margin-right: 0;
+
+@media (width < 380px) {
+  div {
+    grid-template-columns: 120px 120px;
+    gap: 10px;
+    justify-content: center;
+    width: 250px;
+  }
 }
 
 .result {
