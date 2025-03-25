@@ -21,6 +21,7 @@ div {
   height: 120px;
   border-radius: 60px;
   margin-right: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
   box-sizing: border-box;
 }
