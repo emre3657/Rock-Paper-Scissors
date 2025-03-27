@@ -49,6 +49,15 @@ function autoPlay() {
   }
 }
 
+document.querySelectorAll(".move-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.add("clicked");
+    setTimeout(() => {
+      button.classList.remove("clicked");
+    }, 170);
+  });
+});
+
 document.querySelector(".js-rock-button").addEventListener("click", () => {
   playGame("rock");
 });
