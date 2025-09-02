@@ -6,4 +6,4 @@
 This is my first deployment website which is basicly a rock paper scissors game. It's a static app, just HTML, CSS and JavaScript.
 I am happy to share it.
 
-Go to https://emreekincidev.com
+Go to https://emre3657.github.io/Rock-Paper-Scissors/
